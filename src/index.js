@@ -5,10 +5,8 @@ import digitalocean from 'provider-digitalocean/.dist/provider/browser';
 import request from 'browser-request';
 
 const proxies = {
-  // dockerHubApiRoot: 'http://localhost:3408',
-  // discoveryEtcdApiRoot: 'http://localhost:3409'
-  dockerHubApiRoot: 'http://104.154.35.244',
-  discoveryEtcdApiRoot: 'http://23.236.50.60'
+  dockerHubApiRoot: 'http://104.131.153.23:8082',
+  discoveryEtcdApiRoot: 'http://104.131.153.23:8081'
 };
 
 module.exports = (providerConfigs, log) => {
