@@ -21,7 +21,7 @@ The above command will create a new git repository named `your-project-name` in 
 ````
 $ git clone https://github.com/blakelapierre/base-node
 $ cd base-node
-$ npm install -g gulp gulpur
+$ npm install -g gulp-cli
 $ npm install
 ````
 
@@ -29,7 +29,7 @@ $ npm install
 ###Building
 
 ````
-$ gulpur build
+$ gulp build
 ````
 
 ###Running
@@ -47,14 +47,14 @@ $ node .dist/tests/index.js
 This command will watch your source files for changes and run them through `jshint` and the transpiler when they change.
 
 ````
-$ gulpur watch
+$ gulp watch
 ````
 
 -----------
 This command will do what `watch` does, but will also run your program after transpiling and will restart it after each transpile.
 
 ````
-$ gulpur dev
+$ gulp dev
 ````
 
 
@@ -62,7 +62,7 @@ $ gulpur dev
 
 
 ````
-$ gulpur package
+$ gulp package
 $ cd container
 $ ./build.sh
 $ ./publish.sh
