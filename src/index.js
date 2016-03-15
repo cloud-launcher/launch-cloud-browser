@@ -4,9 +4,11 @@ import digitalocean from 'provider-digitalocean/.dist/provider/browser';
 
 import request from 'browser-request';
 
+const ip = '104.236.140.79';
+
 const proxies = {
-  dockerHubApiRoot: 'http://104.131.153.23:8082',
-  discoveryEtcdApiRoot: 'http://104.131.153.23:8081'
+  dockerHubApiRoot: `http://${ip}:8082`,
+  discoveryEtcdApiRoot: `http://${ip}:8081`
 };
 
 module.exports = (providerConfigs, log) => {
