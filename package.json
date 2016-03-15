@@ -1,6 +1,6 @@
 {
   "name": "launch-cloud-browser",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "launch-cloud for your browser",
   "main": ".dist/index.js",
   "scripts": {
